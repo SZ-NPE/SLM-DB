@@ -15,6 +15,7 @@ find_package(PMDK REQUIRED)
 set(Stdcpp_LIBRARY stdc++)
 
 include_directories(
+        ${PMDK_PATH}/include
         ${VMEM_INCLUDE_DIR}
         ${CMAKE_CURRENT_SOURCE_DIR}
         ${CMAKE_CURRENT_SOURCE_DIR}/include)
